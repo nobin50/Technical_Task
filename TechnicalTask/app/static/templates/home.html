@@ -1,0 +1,13 @@
+
+<div>
+    <h1>Person List</h1>
+    <button ui-sref="add-todo" class='btn btn-primary btn-lg' style='margin-bottom:20px;'>Add Person</button>
+
+		<ul class="list-group">
+			<li ng-repeat="todo in todos | orderBy: 'name'" ng-class="{completed: todo.is_completed}" class="list-group-item">                
+            {{todo.name}}
+				
+			</li>
+		</ul>
+
+</div>

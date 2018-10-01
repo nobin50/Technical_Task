@@ -1,0 +1,10 @@
+<div class='row text-center'>
+    <div class='col-sm-4 col-sm-offset-4'>
+        <h1>Add a Person & Contact</h1>
+        <input type="text" ng-model="newTodo.name" placeholder="Enter name" class='form-control' />
+        
+        <input type="text" ng-model="newTodo.phone" ng-controller="fessCntrl" format="number" placeholder="Enter phone number" class='form-control' />
+        
+        <button class='btn btn-success btn-lg' ng-click="addTodo()">Add</button>
+    </div>
+</div>
